@@ -11,6 +11,7 @@ Um projeto simples de calculadora desenvolvido com [Angular](https://angular.io/
 
 * Angular
 * HTML / CSS / TypeScript
+* Tailwind
 
 ## 📦 Como executar o projeto
 
