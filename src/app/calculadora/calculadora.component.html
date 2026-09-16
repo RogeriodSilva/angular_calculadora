@@ -1,0 +1,40 @@
+<div
+  class="container mx-auto flex justify-center items-center w-screen h-screen"
+>
+  <form #frm="ngForm">
+    <div class="w-auto flex flex-col space-y-2">
+      <h1 class="text-2xl text-center font-semibold mb-4">Calculadora Prática</h1>
+      <div class="flex">
+        <input
+          (change)="calc()"
+          name="n1"
+          type="number"
+          class="w-[4rem] text-center border border-zinc-200 p-2 rounded"
+          [(ngModel)]="n1"
+        />
+        <select
+          (change)="calc()"
+          name="mode"
+          class="w-[4rem] text-center font-bold appearance-none p-2"
+          [(ngModel)]="mode"
+        >
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">x</option>
+        </select>
+        <input
+          (change)="calc()"
+          name="n2"
+          type="number"
+          class="w-[4rem] text-center border border-zinc-200 p-2 rounded"
+          [(ngModel)]="n2"
+        />
+        <div class="w-[4rem] text-center font-bold appearance-none p-2">=</div>
+        <div class="w-max text-center p-2 rounded">
+          {{ result }}
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
