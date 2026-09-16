@@ -1,0 +1,13 @@
+td {
+    padding: .5rem;
+    margin: 1pxx
+}
+
+thead {
+    font-weight: 500;
+    background-color: oklch(92% 0.004 286.32)
+}
+
+tbody tr:nth-child(odd){
+    background-color: oklch(96.7% 0.001 286.375)
+}

@@ -1,0 +1,37 @@
+<div class="fixed inset-0 flex justify-center items-center container mx-auto">
+      <div class="w-[24rem]">
+            <h1 class="text-center my-4 text-2xl font-semibold">Calculadora</h1>
+            <form #frm="ngForm" (ngSubmit)="calcularSoma()">
+                  <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col space-y-1">
+                              <label>Número 1</label>
+                              <input
+                                    type="number"
+                                    name="n1"
+                                    class="text-center border border-zinc-200 rounded p-2"
+                                    [(ngModel)]="n1"
+                              />
+                        </div>
+                        <div class="flex flex-col space-y-1">
+                              <label>Número 2</label>
+                              <input
+                                    type="number"
+                                    name="n2"
+                                    class="text-center border border-zinc-200 rounded p-2"
+                                    [(ngModel)]="n2"
+                              />
+                        </div>
+                        <button
+                              type="submit"
+                              class="bg-emerald-700 p-2 mt-8 rounded-mg text-white hover:bg-emerald-800 cursor-pointer"
+                        >
+                              Somar
+                        </button>
+                  </div>
+            </form>
+
+            <div class="text-center mt-10" *ngIf="result"> 
+                  <span>Resultado: {{ result }}</span>
+            </div>
+      </div>
+</div>

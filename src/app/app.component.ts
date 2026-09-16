@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { ListaComprasComponent } from './lista-compras/lista-compras.component';
 
 @Component({
-  imports:[CalculadoraComponent],
+  imports:[ListaComprasComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
